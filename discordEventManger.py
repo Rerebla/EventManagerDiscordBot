@@ -1,5 +1,7 @@
 import discord
-token = "Nzk5MzU3NjIxNDQ1NDU5OTc5.YACZzA.T-ERezJPLifXpLzz7ICcU5nJ6C8"
+token = ''
+with open('auth.txt', mode='r') as authFile:
+    token = authFile.readlines()[0]
 
 
 class MyClient(discord.Client):
